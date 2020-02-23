@@ -18,8 +18,18 @@ namespace ConsoleApplication
         [return: MarshalAs(UnmanagedType.BStr)]
         public static extern string GetName();
 
+        [DllImport("NativeLibrary.dll")]
+        public static extern Shoe CreateShoe(double shoeSize);
+
+        [DllImport("NativeLibrary.dll")]
+        public static extern void BuyShoe(Shoe shoe);
+
         static void Main(string[] args)
         {
+            Shoe newShoe = CreateShoe(11);
+
+            BuyShoe(newShoe);
+
             Console.ReadLine();
         }
     }
