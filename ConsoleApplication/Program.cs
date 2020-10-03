@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApplication.Models;
+using System;
 using System.Runtime.InteropServices;
 
 namespace ConsoleApplication
@@ -26,9 +27,18 @@ namespace ConsoleApplication
 
         static void Main(string[] args)
         {
-            Shoe newShoe = CreateShoe(11);
+            WishList wishList = new WishList("Life");
 
-            BuyShoe(newShoe);
+            wishList.Name = "Birthday";
+
+            wishList.AddItem("Lamp");
+            wishList.AddItem("Graphics Card");
+            wishList.AddItem("Chipotle Burrito Bowl");
+            wishList.RemoveItem("Lamp");
+
+            Console.WriteLine($"{wishList.Name}: {wishList.Count} items");
+
+            wishList.Print();
 
             Console.ReadLine();
         }

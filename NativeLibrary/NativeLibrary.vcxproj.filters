@@ -3,5 +3,19 @@
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Shoe.cpp" />
+    <ClCompile Include="WishList.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="WishListWrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Models">
+      <UniqueIdentifier>{d7739dde-9ffa-40e0-a14b-43ec649ef9dd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WishList.h">
+      <Filter>Models</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

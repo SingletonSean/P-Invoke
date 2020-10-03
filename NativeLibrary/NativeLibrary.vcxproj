@@ -136,6 +136,11 @@
   <ItemGroup>
     <ClCompile Include="Shoe.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="WishList.cpp" />
+    <ClCompile Include="WishListWrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WishList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
